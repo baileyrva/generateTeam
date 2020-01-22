@@ -8,6 +8,8 @@
     "test": "test"
   },
   "dependencies": {
+    "inquirer": "^7.0.3",
+    "jest": "^25.1.0",
     "package.json": "^2.0.1"
   },
   "devDependencies": {},
