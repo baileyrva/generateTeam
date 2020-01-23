@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const util = require('util'); 
+const util = require("util");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
@@ -16,20 +16,13 @@ let teamstr = ``;
 async function main() {
   try {
     await prompt();
-    // for i to teamArray.length  =>
 
     for (let i = 0; i < teamArray.length; i++) {
-      //template literal=``
       teamstr = teamstr + html.generateCard(teamArray[i]);
     }
 
     let finalHTML = html.generateHTML(teamstr);
 
-    console.log(teamstr);
-
-    //call generate function to generate the html template literal
-
-    //write file
     writeFileAsync("./output/index.html", finalHTML);
   } catch (err) {
     return console.log(err);
@@ -134,10 +127,8 @@ async function prompt() {
       }
     ]);
 
-    // console.log(responseDone.choices);
     //the while parameter is saying continue running the code if the user selects "yes"
   } while (responseDone.finish === "Yes");
 }
 
-//run application on the server
 main();
