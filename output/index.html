@@ -1,6 +1,4 @@
-const generateHTML = function(teamstr) {
-  console.log("Inside gen html");
-  return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -50,42 +48,22 @@ const generateHTML = function(teamstr) {
    <h1>Meet Your Team!</h1>
 </div>
 <div class="container-body">
-     ${teamstr} 
-     </div>
-<script src="https://kit.fontawesome.com/257de25400.js" crossorigin="anonymous"></script>         
-</body>
-
-</html>`;
-};
-
-//employee object and looking for the properties in that class
-const generateCard = function(arr) {
-  
-  let roleInfo;
-
-  if (arr.title === "Manager") {
-    roleInfo = `Office Number: ${arr.officeNumber}`;
-  } else if (arr.title === "Engineer") {
-    roleInfo = `Github Username: ${arr.github}`;
-  } else if (arr.title === "Intern") {
-    roleInfo = `School: ${arr.school}`;
-  }
-
-  return `<div class="card">
+     <div class="card">
 <div class="card-header">
-<h2>${arr.name}</h2>  
-<h2><i class="far fa-user"></i> ${arr.title}</h2>
+<h2>Macee Bailey</h2>  
+<h2><i class="far fa-user"></i> Engineer</h2>
 <hr>
 </div>
 <div class="card-body">
 <ul>
-    <li>ID: ${arr.id}</li>
-    <li>Email: ${arr.email}</li>
-    <li>${roleInfo} </li>
+    <li>ID: 1678</li>
+    <li>Email: Macee@test.com</li>
+    <li>Github Username: maceetest </li>
 </ul>
 </div>
-</div>`;
-};
+</div> 
+     </div>
+<script src="https://kit.fontawesome.com/257de25400.js" crossorigin="anonymous"></script>         
+</body>
 
-exports.generateHTML = generateHTML;
-exports.generateCard = generateCard;
+</html>
