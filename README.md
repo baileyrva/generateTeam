@@ -8,7 +8,7 @@ We live in an age where agile project management is common with many enterprise 
 ## User Story
 **As a** manager\
 **I want** to generate a webpage that displays my team's basic info\
-**So that** I have quick access to emails and GitHub profiles\
+**So that** I have quick access to emails and GitHub profiles
 
 ## Credits
 
